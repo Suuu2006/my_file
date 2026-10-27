@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suuu｜個人網頁</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="home">
+
+  <!-- ===== 導覽列 ===== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">蘇文瑄</a>
+      <nav class="nav-links">
+        <a href="#about">關於我</a>
+        <a href="#skills">亮點技能</a>
+        <a href="#important">重要經歷</a>
+        <a href="#projects">專案作品</a>
+        <a href="#activities">課外活動</a>
+        <a href="#contact">聯絡</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== ① 頭貼 / 關於我 ===== -->
+    <section class="hero container" id="about">
+      <p class="hero-vertical">個人作品集</p>
+
+      <span class="avatar-lg">
+        <img src="images/大頭照.jpeg" alt="頭貼" onerror="this.style.display='none'" />
+      </span>
+
+      <div class="hero-text">
+        <p class="eyebrow">國立聯合大學・資訊管理學系</p>
+        <div class="name-line">
+          <h1>蘇文瑄</h1>
+        </div>
+        <p class="lead">
+          歡迎來到我的個人網站！我現在就讀於國立聯合大學資訊管理學系大三，這個網站紀錄我目前大一到大三的學習歷程，期待與你分享我的成長與收穫。
+        </p>
+        <div class="hero-actions">
+          <a href="#important" class="btn btn-primary">重要經歷</a>
+          <a href="#projects" class="btn btn-ghost">專案作品</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== ② 亮點技能 ===== -->
+    <section class="section alt" id="skills">
+      <div class="container">
+        <div class="sec-head">
+          <div>
+            <p class="sec-label">Skills</p>
+            <h2>亮點技能</h2>
+            <p class="sec-desc">這幾年學習與實作累積的能力</p>
+          </div>
+        </div>
+        <div class="skills-wrap" id="skillsMount"></div>
+      </div>
+    </section>
+
+
+    <!-- ===== ③ 重要經歷（首頁只放最新幾個，數量改 data.js 的 HOME_COMPETITIONS_LIMIT） ===== -->
+    <section class="section" id="important">
+      <div class="container">
+        <div class="sec-head">
+          <div>
+            <p class="sec-label">Important Experience</p>
+            <h2>重要經歷</h2>
+            <p class="sec-desc">競賽與獲獎紀錄，點擊卡片前往完整的參賽時間軸</p>
+          </div>
+          <a class="sec-more" href="competitions.html">查看全部 →</a>
+        </div>
+        <div class="grid cols-3" id="importantGrid"></div>
+      </div>
+    </section>
+
+
+    <!-- ===== ④ 專案作品（首頁顯示三個） ===== -->
+    <section class="section alt" id="projects">
+      <div class="container">
+        <div class="sec-head">
+          <div>
+            <p class="sec-label">Projects</p>
+            <h2>專案作品</h2>
+            <p class="sec-desc">精選作品，點擊卡片前往完整的作品時間軸</p>
+          </div>
+          <a class="sec-more" href="projects.html">查看全部 →</a>
+        </div>
+        <div class="grid cols-3" id="projectsGrid"></div>
+      </div>
+    </section>
+
+
+    <!-- ===== ⑤ 課外活動經歷（點擊卡片放大查看） ===== -->
+    <section class="section" id="activities">
+      <div class="container">
+        <div class="sec-head">
+          <div>
+            <p class="sec-label">Activities</p>
+            <h2>課外活動經歷</h2>
+            <p class="sec-desc">服務學習與志工活動，點擊卡片查看照片與說明</p>
+          </div>
+        </div>
+        <div class="grid cols-3" id="activitiesGrid"></div>
+      </div>
+    </section>
+
+
+    <!-- ===== 聯絡 ===== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>聯絡我</h2>
+        <p class="lead">歡迎與我聯繫，交流合作或實習機會。</p>
+        <div class="contact-list">
+          <a href="mailto:wenxuan91323@gmail.com">wenxuan91323@gmail.com</a>
+          <a href="https://www.instagram.com/_wen_su" target="_blank" rel="noopener">@_wen_su</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 蘇文瑄</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
